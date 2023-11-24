@@ -3,14 +3,14 @@
 * {
     margin: 0;
     padding: 0;
-    /* box-sizing: border-box; */
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     color: #f1f1f1;
 }
 
 body {
     height: 100vh;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     background-color: #0c091c;
@@ -110,10 +110,6 @@ p {
 .content-header {
     display: flex;
     gap: 2rem;
-    /* position: fixed;
-    background-color: #0c091c;
-    padding-bottom: 70px;
-    padding-top: 5px; */
 }
 
 .component {
@@ -133,6 +129,11 @@ p {
     width: 100%;
     border-bottom: 5px solid #f1f1f1;
     transition: transform .5s ease-in;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width: 640px) {
