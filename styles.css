@@ -134,6 +134,7 @@ p {
 footer {
     display: flex;
     justify-content: center;
+    padding-bottom: 5px;
 }
 
 @media screen and (max-width: 640px) {
@@ -145,13 +146,19 @@ footer {
         font-size: 20px;
     }
 
-    p{
+    p {
+        font-size: 12px;
+    }
+
+    span {
         font-size: 12px;
     }
 
     .container {
         display: grid;
         grid-template-columns: auto;
+        height: 100%;
+        padding-top: 50px;
         overflow: visible;
     }
 
@@ -170,4 +177,5 @@ footer {
     .component {
         font-size: 12px;
     }
+
 }

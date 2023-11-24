@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
     document.addEventListener('mousemove', updateCursorPosition);
 
+    
 });
 
 
@@ -56,7 +57,9 @@ function showSlides() {
 }
 
 function plusSlides(n) {
-    showSlides(slideIndex += n);
+    if (slideIndex > 1 || n > 0) {
+        showSlides(slideIndex += n -1);
+    }
 }
 
 showSlides();
