@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'Inter', sans-serif;
+    color: #f1f1f1;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c091c;
+    margin: 0;
+    position: relative;
+}
+
+#cursor {
+    position: absolute;
+    background: radial-gradient(600px at 0 0, rgba(14, 72, 232, 0.15), transparent 80%);
+    pointer-events: none;
+    transition: 0.1s ease-out;
+    inset: 0;
+    z-index: 30;
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+article {
+    overflow: auto;
+    scrollbar-base-color: #0c091c;
+}
+
+h1 {
+    font-size: 2.3rem;
+    text-align: center;
+}
+
+p {
+    font-size: 1.3rem;
+    white-space: pre-line;
+    text-indent: 50px;
+    padding-left: 5px;
+    word-break: break-word;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 38% 2% 60%;
+    /* gap: 70px; */
+    margin: 0 auto;
+    height: 75%;
+    width: 80%;
+    overflow: hidden;
+}
+
+.slide-container {
+    position: relative;
+    margin: auto;
+}
+
+.my-slides {
+    display: none;
+}
+
+.my-slides img {
+    width: 100%;
+    max-height: 50vh;
+    object-fit: cover;
+}
+
+.slide-button {
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.prev, .next {
+    font-size: 3rem;
+    align-self: end;
+    cursor: pointer;
+}
+
+.content {
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.info {
+    display: none;
+    /* padding-top: 100px; */
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+}
+
+.content-header {
+    display: flex;
+    gap: 2rem;
+    /* position: fixed;
+    background-color: #0c091c;
+    padding-bottom: 70px;
+    padding-top: 5px; */
+}
+
+.component {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.component.selected::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    border-bottom: 5px solid #f1f1f1;
+    transition: transform .5s ease-in;
+}
+
+@media screen and (max-width: 640px) {
+    aside {
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 12px;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: auto;
+        overflow: visible;
+    }
+
+    .content {
+        gap: 30px;
+        padding: 0 0 90px 0;
+        align-items: normal;
+        overflow: visible;
+    }
+
+    .content-header {
+        gap: 0;
+        justify-content: space-between;
+    }
+
+    .component {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Grace Hopper</title>
+</head>
+<body>
+    <div id="cursor"></div>
+    <main class="container">
+        <aside>
+            <h1>Grace Hopper (1906 - 1992)</h1>
+            <div id="slide-container">
+                <div class="my-slides">
+                    <img src="/assets/portrait.png" alt="">
+                </div>
+                <div class="my-slides">
+                    <img src="/assets/portrait-2.png" alt="">
+                </div>
+                <div class="my-slides">
+                    <img src="/assets/portrait-3.png" alt="">
+                </div>
+                <div class="my-slides">
+                    <img src="/assets/portrait-4.png" alt="">
+                </div>
+                <div class="my-slides">
+                    <img src="/assets/portrait-5.png" alt="">
+                </div>
+                <div class="my-slides">
+                    <img src="/assets/portrait-6.png" alt="">
+                </div>
+                <div class="my-slides">
+                    <img src="/assets/portrait-7.png" alt="">
+                </div>
+
+                <div class="slide-button">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+                </div>
+
+            </div>
+        </aside>
+        <div></div>
+        <section class="content">
+            <div class="content-header">
+                <button id="componente-1" class="component selected" onclick="mostrarDiv(1)">Biografia</button>
+                <button id="componente-2" class="component" onclick="mostrarDiv(2)">Contribuições</button>
+                <button id="componente-3" class="component" onclick="mostrarDiv(3)">Homenagens</button>
+                <button id="componente-4" class="component" onclick="mostrarDiv(4)">Referências</button>
+            </div>
+            <article>            
+                <div class="info" id="info-1">
+
+                    <p>Nascida em 9 de dezembro de 1906 em Nova York, nos Estados Unidos, Grace Hopper foi uma cientista da computação e almirante da Marinha, conhecida como uma das pioneiras da programação de sistemas.
+                    Hopper ingressou aos 17 anos no tradicional Vassar College, onde obteve o bacharelado em matemática e física, concluído em 1928. Conquistou o doutorado em matemática em 1934, na Universidade Yale.
+                        Foi nessa instituição que ela se interessou
+                    por computadores, começando a trabalhar no desenvolvimento das primeiras linguagens. Ao mesmo tempo, trabalhava como professora de matemática no Vassar.
+                    Em 1941, quando os Estados Unidos entraram oficialmente na Segunda Guerra Mundial, Hopper tentou se alistar na Marinha, mas foi rejeitada por ter 34 anos de idade, não ter estatura física suficiente e por seu trabalho de professora, considerado valioso durante os esforços de guerra.
+                    Dois anos depois, porém, conseguiu fazer parte do corpo de reservistas. Após treinamentos, ingressou na equipe de programação do computador Mark I, que foi utilizado para cálculos do desenvolvimento da bomba atômica pelo Projeto Manhattan.
+                    Em 1949, Grace foi contratada pela empresa Eckert-Mauchly Computer Corporation, atuando no desenvolvimento do UNIVAC I, o primeiro computador a ser comercializado em grande escala. Mas o UNIVAC I possuía um processamento complexo de dados, baseado em notação matemática, dificultando o trabalho dos analistas das empresas, que muitas vezes, não possuíam o conhecimento matemático necessário.
+                    Foi então que em 1955, a cientista criou a linguagem FLOW-MATIC, a primeira linguagem de programação a usar palavras como comando. Todavia, esta linguagem foi disponibilizada ao público apenas três anos após a sua criação. Ademais, o FLOW-MATIC  foi utilizado como base para o COBOL (acrônimo de common business-oriented).
+                    Conhecida como “Amazing Grace” pelos seus colegas de trabalho, e atualmente como “Vovó do COBOL”, a cientista permaneceu na marinha até se aposentar aos 79 anos como contra-almirante, foi durante muito tempo o mais velho oficial da ativa nas forças armadas americanas. Sendo que em sua carreira militar Hopper, recebeu mais de quarenta diplomas honorários de diversas Universidades.
+                    Depois da aposentadoria, ela ainda foi contratada como consultora de uma empresa de computação, trabalhando como representante da companhia em fóruns, comitês e eventos. Permaneceu no cargo até os 85 anos, quando morreu de causas naturais.
+                    </p>
+                </div>
+                <div class="info" id="info-2">
+                    <p>A maior contribuição de Hopper sem dúvida foi durante sua atuação como analista de sistemas da Marinha dos Estados Unidos, nas décadas de 1940 e 1950. O projeto, encabeçado pelo Departamento de Defesa dos EUA, resultou no desenvolvimento do COBOL (acrônimo de common business-oriented language, que em português significa "linguagem comum orientada para negócios"), que tinha como base o FLOW-MATIC.
+                    Até hoje o COBOL está presente em inúmeras aplicações, principalmente em sistemas legados que ainda não foram migrados para linguagens mais modernas.</p>
+                </div>
+                <div class="info" id="info-3">
+                    <p>Recebeu mais de 40 títulos honorários. Em 1991, o presidente George Bush lhe concedeu a Medalha Nacional de Tecnologia, a maior condecoração do governo americano na área de tecnologia. Em 1996, a Marinha deu seu nome a um contratorpedeiro, o USS Hopper. A NERSC (National Energy Research Scientific Computing) deu seu nome a um supercomputador Cray, o Cray XE6 Hopper. Em 2016, recebeu postumamente a Medalha Presidencial da Liberdade de Barack Obama.
+                        Por sua grande contribuição, desde 1994 é realizado em sua homenagem o congresso Grace Hopper Celebration of Women in Computing, que celebra os feitos das mulheres no mundo da computação anualmente.
+                    </p>
+                </div>
+                <div class="info" id="info-4">
+                    <p>
+                        <a href="">https://www3.unicentro.br/petfisica/2023/02/22/grace-hopper-1906-1992/#:~:text=Grace%20Brewster%20Murray%20Hopper%20nasceu,de%20apenas%20números%20e%20símbolos.</a>
+
+                        <a href="">https://revistagalileu.globo.com/sociedade/historia/noticia/2022/12/grace-hopper-quem-foi-a-matematica-que-revolucionou-a-programacao.ghtml</a>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="app.js"></script>
+</body>
+</html>
